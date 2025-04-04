@@ -80,7 +80,7 @@ $(document).ready(function(){
             valid(nome);
         }
 
-        if (!dataNascimento.val().match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+        if (!dataNascimento.val().match(/^\d{4}-\d{2}-\d{2}$/)) {
             invalid(dataNascimento);
             algumDeuErro = true;
         } else {
@@ -103,21 +103,21 @@ $(document).ready(function(){
             }
         }
 
-        if (!cpf.val().match(/^\d{3}\.\d{3}\.\d{3}-\d{2}$/)) {
+        if (!cpf.val().match(/^\d{3}\.\d{3}\.\d{3}-\d{2}$/) && !cpf.val().match(/^\d{11}$/)) {
             invalid(cpf);
             algumDeuErro = true;
         } else {
             valid(cpf);
         }
 
-        if (!telefoneFixo.val().match(/^\(\d{2}\)\s\d{4,5}-\d{4}$/)) {
+        if (!telefoneFixo.val().match(/^\(\d{2}\)\s\d{4,5}-\d{4}$/) && !telefoneFixo.val().match(/^\d{10,11}$/)) {
             invalid(telefoneFixo);
             algumDeuErro = true;
         } else {
             valid(telefoneFixo);
         }
 
-        if (!celular.val().match(/^\(\d{2}\)\s\d{5}-\d{4}$/)) {
+        if (!celular.val().match(/^\(\d{2}\)\s\d{5}-\d{4}$/) && !celular.val().match(/^\d{11}$/)) {
             invalid(celular);
             algumDeuErro = true;
         } else {
