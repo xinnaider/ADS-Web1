@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Atividade 03/04</title>
+</head>
+</body>
+<header>
+    <h1 class="titulo1">Formulário de Pessoa</h1>
+</header>
+<div>
+    <div class="card">
+        <h3> Informações pessoais</h3>
+        <div class="input-group">
+            <label for="nome">Nome completo:</label>
+            <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo" required>
+            <span class="invalid-feedback">Nome inválido! Por favor, insira um nome completo.</span>
+        </div>
+        <div class="input-group">
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input id="data-nascimento" name="data-nascimento" type="date" required>
+            <span class="invalid-feedback">Data de nascimento inválida! Por favor, insira uma data no formato DD/MM/AAAA.</span>
+        </div>
+        <div class="input-group">
+            <label for="cpf">CPF:</label>
+            <input id="cpf" name="cpf" type="text" placeholder="Digite seu CPF" required>
+            <span class="invalid-feedback">CPF inválido! Por favor, insira um CPF válido.</span>
+        </div>
+        <div class="input-group">
+            <label for="telefone-fixo">Telefone Fixo:</label>
+            <input id="telefone-fixo" name="telefone-fixo" type="text" placeholder="Digite seu telefone fixo" required>
+            <span class="invalid-feedback">Telefone fixo inválido! Por favor, insira um telefone fixo válido.</span>
+        </div>
+        <div class="input-group">
+            <label for="celular">Celular:</label>
+            <input id="celular" name="celular" type="text" placeholder="Digite seu celular" required>
+            <span class="invalid-feedback">Celular inválido! Por favor, insira um celular válido.</span>
+        </div>
+        <div id="menor-idade">
+            <div class="input-group">
+                <label for="nome-pai">Nome do Pai:</label>
+                <input id="nome-pai" name="nome-pai" type="text" placeholder="Digite o nome do pai" required>
+                <span class="invalid-feedback">Nome do pai inválido! Por favor, insira um nome completo.</span>
+            </div>
+            <div class="input-group ">
+                <label for="nome-mae">Nome da Mãe:</label>
+                <input id="nome-mae" name="nome-mae" type="text" placeholder="Digite o nome da mãe" required>
+                <span class="invalid-feedback">Nome da mãe inválido! Por favor, insira um nome completo.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3> Endereço</h3>
+        <div class="input-group">
+            <label for="cep">CEP:</label>
+            <input id="cep" name="cep" type="text" placeholder="Digite seu CEP" required>
+            <span class="invalid-feedback">CEP inválido! Por favor, insira um CEP válido.</span>
+        </div>
+        <div class="input-group">
+            <label for="endereco">Endereço:</label>
+            <input id="endereco" name="endereco" type="text" placeholder="Digite seu endereço" required>
+            <span class="invalid-feedback">Endereço inválido! Por favor, insira um endereço válido.</span>
+        </div>
+        <div class="input-group">
+            <label for="numero">Número:</label>
+            <input id="numero" name="numero" type="text" placeholder="Digite o número da casa" required>
+            <span class="invalid-feedback">Número inválido! Por favor, insira um número válido.</span>
+        </div>
+        <div class="input-group">
+            <label for="complemento">Complemento (opcional):</label>
+            <input id="complemento" name="complemento" type="text" placeholder="Digite o complemento (opcional)">
+            <span class="invalid-feedback"></span>
+        </div>
+        <div class="input-group">
+            <label for="cidade">Cidade:</label>
+            <input id="cidade" name="cidade" type="text" placeholder="Digite sua cidade" required>
+            <span class="invalid-feedback">Cidade inválida! Por favor, insira uma cidade válida.</span>
+        </div>
+        <div class="input-group">
+            <label for="estado">Estado:</label>
+            <input id="estado" name="estado" type="text" placeholder="Digite seu estado" required>
+            <span class="invalid-feedback">Estado inválido! Por favor, insira um estado válido.</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3> Acesso</h3>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Digite seu email" required>
+            <span class="invalid-feedback">Email inválido! Por favor, insira um email válido.</span>
+        </div>
+        <div class="input-group">
+            <label for="senha">Senha:</label>
+            <input id="senha" name="senha" type="password" placeholder="Digite sua senha" required>
+            <span class="invalid-feedback">Senha inválida! A senha deve ter pelo menos 8 caracteres.</span>
+        </div>
+        <div class="input-group">
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input id="confirmar-senha" name="confirmar-senha" type="password" placeholder="Confirme sua senha" required>
+            <span class="invalid-feedback">As senhas não coincidem! Por favor, verifique.</span>
+        </div>
+    </div>
+    <button type="submit">Enviar</button>
+</div>
+
+</body>
+</html>
