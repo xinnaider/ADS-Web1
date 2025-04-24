@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Chat Mal-Humorado</title>
+  <title>Vizinho mal-humorado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
