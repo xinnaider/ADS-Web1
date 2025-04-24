@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  padding: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#limpar {
+  background-color: #f44336;
+}
+
+#limpar:hover {
+  background-color: #da190b;
+}
+
+#historicoContainer {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#historicoLista {
+  list-style-type: none;
+  padding: 0;
+}
+
+#historicoLista li {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
