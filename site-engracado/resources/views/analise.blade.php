@@ -10,7 +10,7 @@
   <div class="container py-5">
     <h1 class="mb-4">Grok + Twitter: Análise sarcástica</h1>
 
-    <form method="get" action="/" class="row g-2">
+    <form method="get" action="/analise" class="row g-2">
       <div class="col-auto flex-grow-1">
         <input
           type="text"
@@ -42,8 +42,6 @@
           Resultado para <strong>{{ session('user') }}</strong>
         </div>
         <div class="card-body">
-          <p><strong>Bio:</strong> {{ session('bio') }}</p>
-          <hr>
           <h5 class="card-title">Análise sarcástica</h5>
           <p class="card-text">{{ session('analysis') }}</p>
           @if(session('tweets') && count(session('tweets'))>0)
