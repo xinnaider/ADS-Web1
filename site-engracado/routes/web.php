@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 
 Route::get('/analise', function (Request $request) {
     if (!$request->has('username')) {
-        return view('home');
+        return view('analise');
     }
 
     try {
